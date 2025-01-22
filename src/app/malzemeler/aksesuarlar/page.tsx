@@ -2,431 +2,230 @@ import Image from 'next/image';
 
 export default function AccessoriesPage() {
   return (
-    <main className="min-h-screen bg-white pt-24 px-4 md:px-6 lg:px-8 max-w-7xl mx-auto">
-      <h1 className="text-4xl md:text-5xl font-serif mb-6 text-gray-800 text-center">
-        ÇAY SEREMONİSİ AKSESUARLARI
-      </h1>
-
-      <div className="max-w-3xl mx-auto mb-12">
-        <p className="text-lg text-center text-gray-700">
-          Geleneksel Çin çay kültüründe, her bir aksesuar özenle seçilir ve kullanılır. Doğru aksesuarların kullanımı, 
-          çay deneyimini zenginleştirir ve seremoninin ruhunu yansıtır. Koleksiyonumuzda yer alan her parça, 
-          yüzyıllardır süregelen çay kültürünün modern yorumlarını sizlere sunmaktadır.
-        </p>
+    <main className="min-h-screen bg-stone-50 pt-24">
+      {/* Hero Section */}
+      <div className="relative h-[60vh] overflow-hidden">
+        <Image
+          src="/images/tea-ceremony.jpg"
+          alt="Çay Seremonisi"
+          fill
+          style={{ objectFit: 'cover' }}
+          className="brightness-50"
+        />
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
+          <h1 className="text-6xl font-serif mb-6">Çay Seremonisi Sanatı</h1>
+          <p className="text-xl max-w-2xl text-center leading-relaxed">
+            Yüzyıllardır süregelen bir geleneğin zarif aletleri, 
+            her biri ustalıkla şekillendirilmiş ve ruhla bezeli.
+          </p>
+        </div>
       </div>
 
-      {/* Temel Çay Araçları */}
-      <section className="mb-20">
-        <h2 className="text-3xl font-serif mb-8 text-emerald-800 text-center">Temel Çay Araçları</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Çay Maşası */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-            <div className="relative h-72">
-              <Image
-                src="/images/tea-tongs.jpg"
-                alt="Çay Maşası"
-                fill
-                style={{ objectFit: 'cover' }}
-                className="hover:opacity-90 transition-opacity"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">Bambu Çay Maşası</h3>
-              <p className="text-gray-600 mb-4">
-                El yapımı bambu maşalar, çay yapraklarını nazikçe tutmak ve servis etmek için idealdir.
-              </p>
-              <ul className="text-sm space-y-2 text-gray-700">
-                <li>• Doğal bambu yapı</li>
-                <li>• Ergonomik tutuş</li>
-                <li>• 12cm uzunluk</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Çay Ölçeği */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-            <div className="relative h-72">
-              <Image
-                src="/images/tea-scoop.jpg"
-                alt="Çay Ölçeği"
-                fill
-                style={{ objectFit: 'cover' }}
-                className="hover:opacity-90 transition-opacity"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">Pirinç Çay Ölçeği</h3>
-              <p className="text-gray-600 mb-4">
-                Hassas ölçüm için tasarlanmış, el yapımı pirinç çay kaşığı.
-              </p>
-              <ul className="text-sm space-y-2 text-gray-700">
-                <li>• Antik pirinç yapı</li>
-                <li>• 5ml kapasite</li>
-                <li>• Dekoratif detaylar</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Çay İğnesi */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-            <div className="relative h-72">
-              <Image
-                src="/images/tea-pick.jpg"
-                alt="Çay İğnesi"
-                fill
-                style={{ objectFit: 'cover' }}
-                className="hover:opacity-90 transition-opacity"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">Çay İğnesi</h3>
-              <p className="text-gray-600 mb-4">
-                Preslenmiş çayları ayırmak ve parçalamak için özel tasarım.
-              </p>
-              <ul className="text-sm space-y-2 text-gray-700">
-                <li>• Paslanmaz çelik</li>
-                <li>• Ahşap sap</li>
-                <li>• 15cm uzunluk</li>
-              </ul>
-            </div>
-          </div>
+      {/* Ana İçerik */}
+      <div className="max-w-7xl mx-auto px-4 py-20">
+        {/* Giriş Yazısı */}
+        <div className="prose prose-lg mx-auto mb-24 text-center">
+          <p className="text-xl leading-relaxed text-gray-700">
+            Çin çay kültüründe her bir aksesuar, yüzyılların bilgeliğini ve estetiğini taşır. 
+            Bu zarif aletler sadece işlevsel değil, aynı zamanda çay seremonisinin 
+            ruhani yolculuğunda birer rehberdir.
+          </p>
         </div>
-      </section>
 
-      {/* Çay Servis Ekipmanları */}
-      <section className="mb-20 bg-emerald-50 py-16 px-4 rounded-2xl">
-        <h2 className="text-3xl font-serif mb-8 text-emerald-800 text-center">Çay Servis Ekipmanları</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Çay Tabağı */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div className="relative h-64">
+        {/* Çay Hazırlık Sanatı */}
+        <section className="mb-32">
+          <div className="flex flex-col md:flex-row items-center gap-16">
+            <div className="flex-1">
+              <h2 className="text-4xl font-serif text-gray-800 mb-8">Çay Hazırlık Sanatı</h2>
+              <div className="prose prose-lg">
+                <p>
+                  Çay hazırlığı, sabır ve özen gerektiren kutsal bir ritüeldir. 
+                  Her alet, bu ritüelin kusursuz bir şekilde gerçekleştirilmesine 
+                  hizmet eder.
+                </p>
+                <div className="mt-8 space-y-4">
+                  <div className="flex items-start gap-4">
+                    <span className="text-2xl text-emerald-800">壺</span>
+                    <div>
+                      <h3 className="font-medium text-lg">Bambu Çay Maşası</h3>
+                      <p className="text-gray-600">
+                        Yaprakları nazikçe kavrar, çayın özünü korur. Her hareketi 
+                        hassasiyet ve saygıyla yapılır.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <span className="text-2xl text-emerald-800">匙</span>
+                    <div>
+                      <h3 className="font-medium text-lg">Pirinç Çay Ölçeği</h3>
+                      <p className="text-gray-600">
+                        Mükemmel dengeyi sağlamak için tasarlanmış, her ölçüm 
+                        kusursuz bir demleme için hesaplanır.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex-1 relative h-[600px]">
               <Image
-                src="/images/tea-tray.jpg"
-                alt="Bambu Çay Tabağı"
+                src="/images/tea-tools.jpg"
+                alt="Çay Hazırlık Aletleri"
                 fill
                 style={{ objectFit: 'cover' }}
-                className="hover:scale-105 transition-transform duration-300"
+                className="rounded-lg"
               />
             </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">Bambu Çay Tabağı</h3>
-              <p className="text-gray-600 mb-4">
-                Su drenajlı, özel tasarım servis tabağı.
-              </p>
-            </div>
           </div>
+        </section>
 
-          {/* Çay Süzgeci */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div className="relative h-64">
-              <Image
-                src="/images/tea-strainer.jpg"
-                alt="Çay Süzgeci"
-                fill
-                style={{ objectFit: 'cover' }}
-                className="hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">Pirinç Süzgeç</h3>
-              <p className="text-gray-600 mb-4">
-                İnce gözenekli, dekoratif süzgeç.
-              </p>
+        {/* Seramik Sanatı */}
+        <section className="mb-32 relative py-20">
+          <div className="absolute inset-0 bg-stone-100 -skew-y-3"></div>
+          <div className="relative">
+            <div className="flex flex-col md:flex-row-reverse items-center gap-16">
+              <div className="flex-1">
+                <h2 className="text-4xl font-serif text-gray-800 mb-8">Seramik Sanatı</h2>
+                <div className="prose prose-lg">
+                  <p>
+                    Her seramik parça, yüzyılların birikimini taşıyan bir sanat eseridir. 
+                    Ustaların ellerinde şekillenen bu eserler, çay seremonisine ruh katar.
+                  </p>
+                  <div className="mt-8 space-y-6">
+                    <div>
+                      <h3 className="font-medium text-xl mb-2">Yixing Çay Peti</h3>
+                      <p className="text-gray-600">
+                        Mor kil ile şekillenen bu figürler, her çay seremonisinin 
+                        sessiz tanıklarıdır. Zamanla çayın aromasını emerek kendi 
+                        karakterini oluşturur.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="font-medium text-xl mb-2">Porselen Fincanlar</h3>
+                      <p className="text-gray-600">
+                        İnce işçilikle üretilen fincanlar, çayın rengini ve 
+                        berraklığını en iyi şekilde yansıtır.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex-1 relative h-[600px]">
+                <Image
+                  src="/images/ceramic-art.jpg"
+                  alt="Seramik Sanatı"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  className="rounded-lg"
+                />
+              </div>
             </div>
           </div>
+        </section>
 
-          {/* Çay Dengeleyici */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div className="relative h-64">
-              <Image
-                src="/images/tea-pitcher.jpg"
-                alt="Çay Dengeleyici"
-                fill
-                style={{ objectFit: 'cover' }}
-                className="hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">Çay Dengeleyici</h3>
-              <p className="text-gray-600 mb-4">
-                Demleme eşitleyici, fair cup.
-              </p>
+        {/* Saklama ve Sunum */}
+        <section className="mb-32">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-serif text-gray-800 mb-6">Saklama ve Sunum Sanatı</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Çayın tazeliğini korumak ve seremoniye yakışır şekilde sunmak, 
+              ayrı bir uzmanlık ve özen gerektirir.
+            </p>
+          </div>
+          
+          <div className="relative mt-20">
+            <div className="flex flex-col md:flex-row gap-12">
+              <div className="flex-1 relative">
+                <div className="sticky top-24">
+                  <h3 className="text-2xl font-serif mb-6">Saklama Kapları</h3>
+                  <div className="prose prose-lg">
+                    <p>
+                      Geleneksel saklama kapları, çayın aromasını ve tazeliğini 
+                      korumak için özel olarak tasarlanmıştır. Her detay, çayın 
+                      kalitesini korumak için düşünülmüştür.
+                    </p>
+                    <ul className="mt-6 space-y-4">
+                      <li className="flex items-center gap-3">
+                        <span className="w-2 h-2 bg-emerald-800 rounded-full"></span>
+                        Nem kontrolü için çift katlı kapak sistemi
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <span className="w-2 h-2 bg-emerald-800 rounded-full"></span>
+                        Işık geçirmeyen seramik yapı
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <span className="w-2 h-2 bg-emerald-800 rounded-full"></span>
+                        El yapımı geleneksel motifler
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="flex-1">
+                <div className="space-y-8">
+                  <div className="relative h-[400px]">
+                    <Image
+                      src="/images/tea-storage.jpg"
+                      alt="Çay Saklama Kapları"
+                      fill
+                      style={{ objectFit: 'cover' }}
+                      className="rounded-lg"
+                    />
+                  </div>
+                  <div className="relative h-[400px]">
+                    <Image
+                      src="/images/tea-presentation.jpg"
+                      alt="Çay Sunumu"
+                      fill
+                      style={{ objectFit: 'cover' }}
+                      className="rounded-lg"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+        </section>
 
-          {/* Çay Altlığı */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div className="relative h-64">
-              <Image
-                src="/images/tea-coaster.jpg"
-                alt="Çay Altlığı"
-                fill
-                style={{ objectFit: 'cover' }}
-                className="hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">Bambu Altlık</h3>
-              <p className="text-gray-600 mb-4">
-                Dekoratif fincan altlıkları.
+        {/* Bakım ve Koruma */}
+        <section className="relative overflow-hidden rounded-3xl bg-stone-100">
+          <div className="absolute inset-0">
+            <Image
+              src="/images/tea-care.jpg"
+              alt="Çay Aksesuarları Bakımı"
+              fill
+              style={{ objectFit: 'cover' }}
+              className="opacity-20"
+            />
+          </div>
+          <div className="relative p-16">
+            <h2 className="text-4xl font-serif text-gray-800 mb-12">Bakım ve Koruma</h2>
+            <div className="max-w-2xl">
+              <p className="text-lg text-gray-700 mb-8">
+                Her aksesuar, uzun yıllar boyunca size eşlik edecek değerli bir 
+                yol arkadaşıdır. Bu değerli parçaların bakımı, çay kültürünün 
+                önemli bir parçasıdır.
               </p>
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-xl font-medium mb-4">Seramik Ürünler</h3>
+                  <p className="text-gray-600 mb-4">
+                    Her kullanımdan sonra nazikçe temizlenmeli, ani ısı değişimlerinden 
+                    korunmalıdır. Doğal yöntemlerle kurutulması önerilir.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-medium mb-4">Bambu Ürünler</h3>
+                  <p className="text-gray-600 mb-4">
+                    Nemli ortamlardan uzak tutulmalı, düzenli olarak havalandırılmalıdır. 
+                    Doğal bambu yağı ile bakım yapılması önerilir.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Dekoratif Aksesuarlar */}
-      <section className="mb-20">
-        <h2 className="text-3xl font-serif mb-8 text-emerald-800 text-center">Dekoratif Aksesuarlar</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Çay Peti */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-            <div className="relative h-72">
-              <Image
-                src="/images/tea-pet.jpg"
-                alt="Seramik Çay Peti"
-                fill
-                style={{ objectFit: 'cover' }}
-                className="hover:opacity-90 transition-opacity"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">Seramik Çay Peti</h3>
-              <p className="text-gray-600 mb-4">
-                Şans getiren geleneksel çay masası figürleri.
-              </p>
-              <ul className="text-sm space-y-2 text-gray-700">
-                <li>• Yixing kili</li>
-                <li>• Renk değiştiren yüzey</li>
-                <li>• El yapımı</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Tütsülük */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-            <div className="relative h-72">
-              <Image
-                src="/images/incense-holder.jpg"
-                alt="Seramik Tütsülük"
-                fill
-                style={{ objectFit: 'cover' }}
-                className="hover:opacity-90 transition-opacity"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">Seramik Tütsülük</h3>
-              <p className="text-gray-600 mb-4">
-                Çay seremonisi için özel tasarım tütsülük.
-              </p>
-              <ul className="text-sm space-y-2 text-gray-700">
-                <li>• Porselen yapı</li>
-                <li>• Geleneksel motifler</li>
-                <li>• Çok amaçlı kullanım</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Çay Fırçası */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-            <div className="relative h-72">
-              <Image
-                src="/images/tea-brush.jpg"
-                alt="Bambu Çay Fırçası"
-                fill
-                style={{ objectFit: 'cover' }}
-                className="hover:opacity-90 transition-opacity"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">Bambu Çay Fırçası</h3>
-              <p className="text-gray-600 mb-4">
-                Geleneksel temizlik ve servis fırçası.
-              </p>
-              <ul className="text-sm space-y-2 text-gray-700">
-                <li>• Doğal at kılı</li>
-                <li>• Bambu sap</li>
-                <li>• El yapımı</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Saklama ve Taşıma */}
-      <section className="mb-20 bg-emerald-50 py-16 px-4 rounded-2xl">
-        <h2 className="text-3xl font-serif mb-8 text-emerald-800 text-center">Saklama ve Taşıma</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Çay Saklama Kabı */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div className="relative h-80">
-              <Image
-                src="/images/tea-caddy.jpg"
-                alt="Çay Saklama Kabı"
-                fill
-                style={{ objectFit: 'cover' }}
-                className="hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">Porselen Saklama Kabı</h3>
-              <p className="text-gray-600 mb-4">
-                Hava geçirmez kapaklı, özel tasarım saklama kapları.
-              </p>
-              <ul className="text-sm space-y-2 text-gray-700">
-                <li>• Çift katlı kapak sistemi</li>
-                <li>• Nem kontrolü</li>
-                <li>• UV koruması</li>
-                <li>• 250g kapasite</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Seyahat Seti */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div className="relative h-80">
-              <Image
-                src="/images/travel-set.jpg"
-                alt="Seyahat Çay Seti"
-                fill
-                style={{ objectFit: 'cover' }}
-                className="hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">Seyahat Çay Seti</h3>
-              <p className="text-gray-600 mb-4">
-                Kompakt tasarımlı, taşınabilir çay seti.
-              </p>
-              <ul className="text-sm space-y-2 text-gray-700">
-                <li>• 4 fincan ve 1 demlik</li>
-                <li>• Koruyucu çanta</li>
-                <li>• Katlanabilir tasarım</li>
-                <li>• Darbeye dayanıklı</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Bakım ve Temizlik */}
-      <section className="mb-20">
-        <h2 className="text-3xl font-serif mb-8 text-emerald-800 text-center">Bakım ve Temizlik</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Çay Havlusu */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div className="relative h-72">
-              <Image
-                src="/images/tea-towel.jpg"
-                alt="Çay Havlusu"
-                fill
-                style={{ objectFit: 'cover' }}
-                className="hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">Çay Havlusu</h3>
-              <p className="text-gray-600 mb-4">
-                %100 pamuk, el işi nakışlı havlular.
-              </p>
-              <ul className="text-sm space-y-2 text-gray-700">
-                <li>• Yüksek emicilik</li>
-                <li>• Yumuşak doku</li>
-                <li>• 30x30cm</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Temizlik Fırçası Seti */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div className="relative h-72">
-              <Image
-                src="/images/cleaning-set.jpg"
-                alt="Temizlik Fırçası Seti"
-                fill
-                style={{ objectFit: 'cover' }}
-                className="hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">Temizlik Fırçası Seti</h3>
-              <p className="text-gray-600 mb-4">
-                Özel tasarım temizlik fırçaları seti.
-              </p>
-              <ul className="text-sm space-y-2 text-gray-700">
-                <li>• 3 farklı boy</li>
-                <li>• Doğal kıl</li>
-                <li>• Bambu saplar</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Kurutma Standı */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div className="relative h-72">
-              <Image
-                src="/images/drying-rack.jpg"
-                alt="Kurutma Standı"
-                fill
-                style={{ objectFit: 'cover' }}
-                className="hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">Bambu Kurutma Standı</h3>
-              <p className="text-gray-600 mb-4">
-                Demlik ve fincanlar için kurutma standı.
-              </p>
-              <ul className="text-sm space-y-2 text-gray-700">
-                <li>• Katlanabilir tasarım</li>
-                <li>• Doğal bambu</li>
-                <li>• 6 bölmeli</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Bakım Önerileri */}
-      <section className="bg-emerald-50 p-8 rounded-2xl">
-        <h2 className="text-3xl font-serif mb-6 text-emerald-800 text-center">
-          Aksesuar Bakım Önerileri
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="bg-white p-6 rounded-xl shadow-md">
-            <h3 className="font-medium text-lg mb-3 text-emerald-700">Bambu Ürünler</h3>
-            <ul className="space-y-2 text-gray-700 text-sm">
-              <li>• Nemli ortamlardan uzak tutun</li>
-              <li>• Düzenli havalandırın</li>
-              <li>• Doğal bambu yağı ile koruyun</li>
-            </ul>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-md">
-            <h3 className="font-medium text-lg mb-3 text-emerald-700">Seramik Ürünler</h3>
-            <ul className="space-y-2 text-gray-700 text-sm">
-              <li>• Yumuşak süngerle temizleyin</li>
-              <li>• Sert darbelere karşı koruyun</li>
-              <li>• Ani ısı değişiminden kaçının</li>
-            </ul>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-md">
-            <h3 className="font-medium text-lg mb-3 text-emerald-700">Metal Ürünler</h3>
-            <ul className="space-y-2 text-gray-700 text-sm">
-              <li>• Her kullanımdan sonra kurulayın</li>
-              <li>• Paslanmaya karşı koruyun</li>
-                <li>• Yumuşak bezle parlatın</li>
-            </ul>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-md">
-            <h3 className="font-medium text-lg mb-3 text-emerald-700">Tekstil Ürünler</h3>
-            <ul className="space-y-2 text-gray-700 text-sm">
-              <li>• Düzenli olarak yıkayın</li>
-              <li>• Ilık suda bekletin</li>
-              <li>• Doğal kurutun</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
   );
 } 
