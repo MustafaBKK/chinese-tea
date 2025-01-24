@@ -39,7 +39,7 @@ export default function HistoryPage() {
                   fill
                   sizes="100vw"
                   style={{ objectFit: 'cover' }}
-                  className="opacity-20"
+                  className="opacity-60"
                 />
               </div>
               
@@ -90,7 +90,7 @@ export default function HistoryPage() {
                     fill
                     sizes="100vw"
                     style={{ objectFit: 'cover' }}
-                    className="opacity-20"
+                    className="opacity-60"
                   />
                 </div>
                 
@@ -142,7 +142,7 @@ export default function HistoryPage() {
                       fill
                       sizes="100vw"
                       style={{ objectFit: 'cover' }}
-                      className="opacity-20"
+                      className="opacity-60"
                     />
                   </div>
                 </div>
@@ -252,7 +252,7 @@ export default function HistoryPage() {
                 fill
                 sizes="100vw"
                 style={{ objectFit: 'cover' }}
-                className="opacity-20"
+                className="opacity-60"
               />
             </div>
             <div className="relative p-16">
