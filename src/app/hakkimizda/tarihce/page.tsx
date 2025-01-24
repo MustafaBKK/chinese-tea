@@ -37,12 +37,12 @@ export default function HistoryPage() {
                   Efsanevi Başlangıç
                 </h2>
                 <div className="prose prose-lg">
-                  <p>
+                  <p className="text-gray-800 font-medium">
                     Çin çayının tarihi, M.Ö. 2737 yılına, efsanevi İmparator Shen Nung dönemine kadar uzanır. 
                     Rivayete göre, bir gün bahçesinde dinlenirken kaynatılmış suyuna düşen birkaç çay yaprağı, 
                     insanlık tarihinin en önemli içeceklerinden birinin keşfine vesile olur.
                   </p>
-                  <p>
+                  <p className="text-gray-800 font-medium">
                     İmparator, suyun renginin değiştiğini ve ortaya çıkan aromanın büyüleyici olduğunu fark eder. 
                     İçtiğinde vücudunda ferahlık hisseder ve böylece çayın şifalı özellikleri de keşfedilmiş olur.
                   </p>
@@ -72,12 +72,12 @@ export default function HistoryPage() {
                     Tang Hanedanlığı'nın Altın Çağı
                   </h2>
                   <div className="prose prose-lg">
-                    <p>
+                    <p className="text-gray-800 font-medium">
                       Tang Hanedanlığı (618-907), Çin çay kültürünün altın çağıdır. Bu dönemde çay, 
                       sadece bir içecek olmaktan çıkıp bir sanat formuna dönüşür. Lu Yu'nun yazdığı 
                       "Çay Klasiği" (茶經), çay kültürünün temel taşı haline gelir.
                     </p>
-                    <p>
+                    <p className="text-gray-800 font-medium">
                       Saray mensupları ve şairler çay seremonilerinde bir araya gelir, şiirler yazılır, 
                       çay üzerine felsefi sohbetler edilir. Çay artık sadece bir içecek değil, 
                       bir medeniyet sembolüdür.
@@ -110,21 +110,21 @@ export default function HistoryPage() {
               <div className="flex flex-col md:flex-row items-stretch gap-12">
                 <div className="flex-1">
                   <div className="sticky top-24 prose prose-lg">
-                    <p>
+                    <p className="text-gray-800 font-medium">
                       İpek Yolu, sadece ipeğin değil, çayın da dünyaya açılan kapısı olur. 
                       Kervanlar, değerli ipek kumaşların yanında, özenle paketlenmiş çay yapraklarını da taşır. 
                       Çay, bu yolculukla birlikte farklı kültürlerle tanışır ve her uğradığı yerde 
                       yeni geleneklerin doğmasına vesile olur.
                     </p>
 
-                    <p>
+                    <p className="text-gray-800 font-medium">
                       M.S. 618-907 yılları arasında, Tang Hanedanlığı döneminde, çay ticareti İpek Yolu üzerinde 
                       altın çağını yaşar. Çin'den başlayan bu yolculuk, Orta Asya üzerinden Avrupa'ya kadar uzanır. 
                       Özellikle sıkıştırılmış çay kalıpları, uzun kervan yolculukları için ideal bir ticaret ürünü 
                       haline gelir.
                     </p>
 
-                    <p>
+                    <p className="text-gray-800 font-medium">
                       8. yüzyılda, Çay-At Ticareti (茶馬古道) olarak bilinen özel bir ticaret yolu oluşur. 
                       Tibet'in güçlü atları karşılığında, Çin'in değerli çayları takas edilir. Bu ticaret, 
                       her iki uygarlık için de hayati önem taşır ve yüzyıllar boyunca devam eder.
@@ -221,13 +221,13 @@ export default function HistoryPage() {
               </h2>
               <div className="max-w-3xl">
                 <div className="prose prose-lg">
-                  <p>
+                  <p className="text-gray-800 font-medium">
                     Günümüzde Çin çayı, geleneksel üretim yöntemleri ve modern teknolojinin 
                     mükemmel bir sentezini sunuyor. UNESCO tarafından kültürel miras listesine 
                     alınan çay bahçeleri ve üretim teknikleri, binlerce yıllık geleneği yaşatmaya 
                     devam ediyor.
                   </p>
-                  <p>
+                  <p className="text-gray-800 font-medium">
                     Biz de bu kadim geleneğin modern temsilcileri olarak, size en seçkin 
                     Çin çaylarını sunmaktan gurur duyuyoruz. Her bir ürünümüz, uzun bir tarihî 
                     yolculuğun ve derin bir kültürel birikimin temsilcisidir.
