@@ -26,10 +26,14 @@ export default function HistoryPage() {
       </div>
 
       {/* Tarihçe Bölümü */}
-      <section className="py-24">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           {/* Efsanevi Başlangıç */}
           <div className="mb-32">
+            <h2 className="text-4xl font-serif text-gray-800 mb-8">
+              <span className="text-2xl block text-emerald-800 mb-2">神農氏</span>
+              Efsanevi Başlangıç
+            </h2>
             <div className="flex flex-col md:flex-row items-center gap-16 relative">
               {/* Mobil arka plan resmi */}
               <div className="absolute inset-0 w-full h-full md:hidden">
@@ -44,10 +48,6 @@ export default function HistoryPage() {
               </div>
               
               <div className="flex-1 relative z-10">
-                <h2 className="text-4xl font-serif text-gray-800 mb-8 -mt-8 md:mt-0">
-                  <span className="text-2xl block text-emerald-800 mb-2">神農氏</span>
-                  Efsanevi Başlangıç
-                </h2>
                 <div className="prose prose-lg">
                   <p className="text-gray-800 font-medium text-base sm:text-lg">
                     Çin çayının tarihi, M.Ö. 2737 yılına, efsanevi İmparator Shen Nung dönemine kadar uzanır. 
